@@ -23,13 +23,4 @@ public class ZipCodeRange {
 	public void setUpperBound(int upperBound) {
 		this.upperBound = upperBound;
 	}
-
-	public boolean equals(Object obj) {
-		boolean result = false;
-		if (obj instanceof ZipCodeRange) {
-			ZipCodeRange that = (ZipCodeRange) obj;
-			result = (this.getUpperBound() == that.getUpperBound() && this.getLowerBound() == that.getLowerBound());
-		}
-		return result;
-	}
 }
